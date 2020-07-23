@@ -11,5 +11,9 @@ router.get("/contact",function(req,res,next){
   })
 })
 
-
+router.get("/detay",function(req,res,next){
+  res.render("front/main/detay",{
+    title:"İlan Detay"
+  })
+})
 module.exports = router;
