@@ -16,4 +16,6 @@ router.get("/detay",function(req,res,next){
     title:"İlan Detay"
   })
 })
+
+
 module.exports = router;
