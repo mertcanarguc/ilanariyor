@@ -8,7 +8,14 @@ const engine = require("ejs-locals")
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
-mongoose.connect("mongodb://ilan:Q1w2e3r4.@ds053128.mlab.com:53128/ilan")
+mongoose.connect("mongodb+srv://mutlak:Q1w2e3r4.@cluster0.uxiuf.mongodb.net/ilanediyor?retryWrites=true&w=majority",(err,data)=>{
+  if (err) {
+    console.log(err)
+  } else {
+    console.log("Başarılı")
+  }
+})
+
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
